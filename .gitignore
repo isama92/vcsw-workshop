@@ -1,19 +1,43 @@
-/.phpunit.cache
-/node_modules
-/public/build
+### Laravel ###
+.env*
+!.env.example
+!.env.ci
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
-.env
-.env.backup
-.env.production
-.phpunit.result.cache
+
+### Docker & Homestead ###
+/docker-compose.override.yml
 Homestead.json
 Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
-/.fleet
+
+### Composer ###
+/vendor
+
+### NPM ###
+/node_modules
+/npm-debug.log
+/yarn-error.log
+
+### CI Tools ###
+/.phpunit.*
+/.php-cs-fixer.cache
+
+### UI ###
+/public/build
+/public/vendor/horizon
+/public/vendor/telescope
+
+### IDEs ###
 /.idea
 /.vscode
+
+### Operating System ###
+.DS_Store
+Thumbs.db
+
+### Other ###
+/draft.yaml
+/.blueprint
+/ray.php
+/.phpactor.json
