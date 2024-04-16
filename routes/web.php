@@ -15,3 +15,10 @@ Route::middleware('auth')->group(function (): void {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/pokemon', function () {
+    return GetAllPokemonRequest::make()
+        ->send()
+        ->collect('results')
+        ->pluck('name');
+});
