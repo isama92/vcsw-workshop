@@ -22,8 +22,7 @@ it('fetches and displays a list of Pokèmon', function (): void {
         ->assertSee('bulbasaur');
 });
 
-
-it('fetches and displays a list of Pokèmon using a Fixture', function() {
+it('fetches and displays a list of Pokèmon using a Fixture', function (): void {
     Saloon::fake([
         GetAllPokemonRequest::class => MockResponse::fixture('pokemon/all'),
     ]);
